@@ -10,4 +10,4 @@ COPY . .
 
 RUN python -c "from rembg import new_session; new_session('u2net')"
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "main:app", "--host", "::", "--port", "8080"]
